@@ -1,0 +1,91 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+	
+	<body>
+	<center>		
+	<img class="w3-container">
+		<img src="css/top.jpg" width="100%" height="55%"></img>
+
+	<div class="w3-deep-purple">
+		<button class="w3-bar-item w3-button" onclick="openKota('FourSkab')">About FourSkab</button>
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Product</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="openKota('Galaxy')">Galaxy</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Star')">Star</button>
+			</div>
+		</div>
+			<button class="w3-bar-item w3-button" onclick="openKota('Packaging')">Packaging</button>
+			<button class="w3-bar-item w3-button" onclick="openKota('Contact')">Contact</button>
+			<button class="w3-bar-item w3-button" onclick="openKota('Aboutme')">About Me</button>
+	</div>
+	<div class="w3-black">
+	<div id="FourSkab" class="w3-container kota w3-animate-top" style="display:none">
+		<h2>FOURSKAB</h2>
+			<p>FourSkab merupakan salah satu pelopor brand lokal asal kota Bandung, Jawa Barat, Indonesia.Sejak 3 juli 2024 sampai saat ini, kami masih terus berkarya dengan membawa pesan kegembiraan, kreativitas, dan inovasi ke dalam industri fashion yang bertujuan membuat pakaian stylish standar internasional, dengan harga terjangkau.
+				Melalui inovasi dan dedikasi untuk menghadirkan pakaian terbaik, kami ingin memberikan kesempatan bagi semua orang untuk merasakan pengalaman menggunakan pakaian yang berkualitas tanpa harus mengeluarkan biaya yang terlalu mahal.</p>
+		<br><hr>
+		<img src="css/FourSkabb.jpg" width="500">
+	</div>
+	<div id="Packaging" class="w3-container kota w3-animate-left" style="display:none">
+		<img src="css/Packaging.jpg" width="400">
+			<br><hr>
+		<h2>STIKER</h2>
+			<img src="css/Stiker1.jpg" width="200">
+			<img src="css/Stiker2.jpg" width="200">
+			<img src="css/Stiker3.jpg" width="200">
+		<br><hr>
+		<h2>BUSINESS CARD</h2>
+			<img src="css/Card1.jpg" width="200">
+			<img src="css/Card2.jpg" width="200">
+
+	</div>
+	<div id="Contact" class="w3-container kota w3-animate-right" style="display:none">
+		<h2>Customer Service</h2>
+				<p>Monday - Saturday</p>
+				<p>09.00 - 17.00 WIB</p>
+				<p>WhatsApp  : +6289637590608</p>
+				<p>Instagram : fourskab</p>		
+	<footer>
+        <div class="container">
+            <section id="socialmedia" class="socialmedia-section"></section>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+                  <ul class="socialmediaicons">
+                    <a href="https://www.instagram.com/fourskab?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://wa.link/ku14n8" target="_blank"><i class="fa fa-whatsapp"></i>
+                    </ul>
+        </div>
+    </footer>
+			
+	</div>
+	<div id="Aboutme" class="w3-container kota w3-animate-zoom" style="display:none">
+		<img src="css/Azka1.jpg" width="25%" height="50%">
+				<p>NAME  : MUHAMMAD AZKA MUJAHID RAIS</p>
+				<p>NIM   : 10523081</p>
+				<p>CLASS : IS-2</p>
+				<p>PRODI : SISTEM INFORMASI</p>
+	</div>
+	<div id="Galaxy" class="w3-containe kota w3-anime-right" style="display:none">
+		<img src="css/Product1.2.jpg" width="400">
+		<img src="css/Product1.jpg" width="400">
+	</div>
+	<div id="Star" class="w3-containe kota w3-anime-right" style="display:none">
+		<img src="css/Product3.png" width="400">
+		<img src="css/Product3.2.png" width="400">
+	</div>
+	</div>
+
+	<script>
+	function openKota(namakota) {
+	var i; 
+	var x = document.getElementsByClassName("kota");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none"; 
+	}
+	document.getElementById(namakota).style.display = "block"; 
+	}
+	</script>
+	</body>
+</html>
